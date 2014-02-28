@@ -1,0 +1,10 @@
+<% if @computer_choice == @player_choice.win %>
+	<h2> You win! </h2>
+	<p> You and the computer both chose <%= @computer_choice %>. </p>
+<% elsif @computer_choice == @player_choice.lost %>
+	<h2> Sorry, you lost. </h2>
+	<p> The computer chose <%= @computer_choice %>. </p>
+<% else @computer_choice == @player_choice.tie %>
+	<h2> It's a tie. </h2>
+	<p> The computer chose <%= @computer_choice %>. </p>
+<% end %>
